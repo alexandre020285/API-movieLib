@@ -13,12 +13,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route element={<App />}>,
-        children:[
+
+        <Route  element={<App />}>,
+        
           <Route path="/Api-MovieLib/" element={<Home />} />
-          <Route path="/Api-MovieLib/movie/:id" element={<Movie />} />
-          <Route path="/Api-MovieLib/search" element={<Search />} />
-        ],
+          <Route path="/movie/:id" element={<Movie />} />
+          <Route path="/search" element={<Search />} />
+        
         </Route>
       </Routes>
     </BrowserRouter>
