@@ -16,6 +16,7 @@
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  /* background-color: #fff; */
 }
 
 .movies-container div {
@@ -60,3 +61,14 @@
   background-color: transparent;
   color: #f7d354;
 }
+@media (max-width: 900px) {  
+  .movies-container div {  
+    flex: 1 1 45%; /* 2 colunas em telas médias */  
+  }  
+}  
+
+@media (max-width: 600px) {  
+  .movies-container div {  
+    flex: 1 1 100%; /* 1 coluna em telas pequenas */  
+  }  
+}  
